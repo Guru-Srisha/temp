@@ -10,7 +10,7 @@ pin=4
 
 while(1):
     try:
-        humidity,temperature=  Adafruit_DHT.read_retry(sensor,pin)
+        humidity,temperature=Adafruit_DHT.read_retry(sensor,pin)
         print("Humidity="+str(humidity))
         print("Temperature="+str(temperature))
         time.sleep(5)
